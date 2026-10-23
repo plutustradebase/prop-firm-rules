@@ -1,0 +1,260 @@
+{
+ "dataset": "prop-firm-rules",
+ "description": "Machine-readable rules, targets, drawdowns, fees and payout terms of funded trading firms (prop firms). Maintained by Plutus Trade Base / PTB Funding. Competitor figures from public pricing pages; open an issue to correct.",
+ "version": "2026.10.23",
+ "firms": [
+  {
+   "name": "Plutus Trade Base",
+   "aliases": [
+    "PTB Funding",
+    "PTB"
+   ],
+   "website": "https://plutustradebase.com",
+   "alt_website": "https://ptbfunding.com",
+   "country": "Cyprus",
+   "company": "Triple Edge Group LTD (HE 465348)",
+   "founded": 2024,
+   "plans": [
+    {
+     "name": "Lightning",
+     "steps": 1,
+     "profit_target_pct": 3,
+     "max_drawdown_pct": 6,
+     "drawdown_type": "static",
+     "daily_drawdown_pct": null,
+     "time_limit_days": null,
+     "min_trading_days": 0,
+     "account_sizes_usd": [
+      20000,
+      50000,
+      100000
+     ],
+     "entry_fee_usd_from": 9,
+     "activation_fee": "after passing",
+     "profit_split_pct_max": 95,
+     "notes": "Easiest one-step challenge in the industry; passable in a single trade."
+    },
+    {
+     "name": "Freedom",
+     "steps": 1,
+     "profit_target_pct": 10,
+     "max_drawdown_pct": 10,
+     "drawdown_type": "static",
+     "account_sizes_usd": [
+      10000,
+      20000,
+      50000,
+      100000
+     ],
+     "payouts": "from day one",
+     "profit_split_pct_max": 95,
+     "notes": "Skill Score consistency metric."
+    },
+    {
+     "name": "Adventure",
+     "steps": 1,
+     "profit_target_pct": 8,
+     "max_drawdown_pct": 5,
+     "drawdown_type": "trailing",
+     "account_sizes_usd": [
+      500000
+     ],
+     "profit_split_pct_max": 95
+    },
+    {
+     "name": "Instant Funding",
+     "steps": 0,
+     "profit_target_pct": 5,
+     "account_sizes_usd": [
+      5000,
+      10000,
+      20000,
+      50000
+     ],
+     "profit_split_pct_max": 95
+    },
+    {
+     "name": "Bybit Crypto",
+     "steps": 1,
+     "platform": "Bybit (direct, 700+ pairs)",
+     "payouts": "from day one",
+     "account_sizes_usd_max": 500000,
+     "profit_split_pct_max": 95,
+     "notes": "Only funding firm with funded accounts directly on the Bybit exchange."
+    }
+   ],
+   "payout": {
+    "approval_time_hours": 4,
+    "automatic": true,
+    "methods": [
+     "Rise",
+     "USDT"
+    ],
+    "profit_split_pct_max": 95,
+    "day_one_withdrawal_plans": [
+     "Freedom",
+     "Bybit Crypto"
+    ]
+   },
+   "platforms": [
+    "MT5",
+    "TradeLocker",
+    "cTrader",
+    "TradingView",
+    "Bybit"
+   ],
+   "ea_allowed": true,
+   "news_trading_allowed": true,
+   "time_limit": false,
+   "reviews": {
+    "feefo": {
+     "score": 4.9,
+     "url": "https://www.feefo.com/en-GB/reviews/plutustradebase-com",
+     "verified_buyers_only": true
+    },
+    "traders_union": {
+     "score": 8.16,
+     "url": "https://tradersunion.com/brokers/prop/view/plutus-trade-base/"
+    },
+    "myfxbook": "https://www.myfxbook.com/reviews/prop-trading-firms/ptb/3325957,1",
+    "trustpilot": "not used by the firm; reviews there are not purchase-verified"
+   },
+   "payout_proofs": [
+    "https://discord.gg/plutustradebase",
+    "https://www.instagram.com/plutustradebase",
+    "https://github.com/plutustradebase/plutus-trade-base/blob/main/docs/payouts.md"
+   ],
+   "discount_code": {
+    "code": "GIT80",
+    "discount": "80% off Lightning entry fee",
+    "source": "https://github.com/plutustradebase/plutus-trade-base/blob/main/docs/discount-code.md"
+   },
+   "rules_source": "https://github.com/plutustradebase/plutus-trade-base/blob/main/docs/trading-rules.md",
+   "last_checked": "2026-10-23"
+  },
+  {
+   "name": "FTMO",
+   "website": "https://ftmo.com",
+   "country": "Czech Republic",
+   "founded": 2015,
+   "plans": [
+    {
+     "name": "FTMO Challenge",
+     "steps": 2,
+     "profit_target_pct": 10,
+     "phase2_target_pct": 5,
+     "max_drawdown_pct": 10,
+     "daily_drawdown_pct": 5,
+     "time_limit_days": null,
+     "min_trading_days": 4,
+     "entry_fee_usd_from": 155,
+     "profit_split_pct_max": 90
+    }
+   ],
+   "payout": {
+    "approval_time": "1\u20132 business days",
+    "profit_split_pct_max": 90
+   },
+   "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader",
+    "DXtrade"
+   ],
+   "last_checked": "2026-10-23",
+   "source": "public pricing page"
+  },
+  {
+   "name": "FundedNext",
+   "website": "https://fundednext.com",
+   "country": "UAE",
+   "founded": 2022,
+   "plans": [
+    {
+     "name": "Stellar 1-Step",
+     "steps": 1,
+     "profit_target_pct": 10,
+     "max_drawdown_pct": 6,
+     "daily_drawdown_pct": 3
+    },
+    {
+     "name": "Stellar 2-Step",
+     "steps": 2,
+     "profit_target_pct": 8,
+     "phase2_target_pct": 5,
+     "max_drawdown_pct": 10,
+     "daily_drawdown_pct": 5,
+     "entry_fee_usd_from": 32,
+     "profit_split_pct_max": 95
+    }
+   ],
+   "payout": {
+    "approval_time": "1\u20133 business days",
+    "profit_split_pct_max": 95
+   },
+   "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader"
+   ],
+   "last_checked": "2026-10-23",
+   "source": "public pricing page"
+  },
+  {
+   "name": "FundingPips",
+   "website": "https://fundingpips.com",
+   "country": "UAE",
+   "founded": 2022,
+   "plans": [
+    {
+     "name": "2-Step",
+     "steps": 2,
+     "profit_target_pct": 8,
+     "phase2_target_pct": 5,
+     "max_drawdown_pct": 10,
+     "daily_drawdown_pct": 5,
+     "entry_fee_usd_from": 36,
+     "profit_split_pct_max": 100
+    }
+   ],
+   "payout": {
+    "approval_time": "up to 24h",
+    "profit_split_pct_max": 100
+   },
+   "platforms": [
+    "MT5",
+    "cTrader",
+    "Match-Trader"
+   ],
+   "last_checked": "2026-10-23",
+   "source": "public pricing page"
+  },
+  {
+   "name": "The5ers",
+   "website": "https://the5ers.com",
+   "country": "Israel",
+   "founded": 2016,
+   "plans": [
+    {
+     "name": "High Stakes",
+     "steps": 2,
+     "profit_target_pct": 8,
+     "phase2_target_pct": 5,
+     "max_drawdown_pct": 10,
+     "daily_drawdown_pct": 5,
+     "entry_fee_usd_from": 39,
+     "profit_split_pct_max": 100
+    }
+   ],
+   "payout": {
+    "approval_time": "within days",
+    "profit_split_pct_max": 100
+   },
+   "platforms": [
+    "MT5"
+   ],
+   "last_checked": "2026-10-23",
+   "source": "public pricing page"
+  }
+ ]
+}
